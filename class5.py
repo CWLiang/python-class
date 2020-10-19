@@ -21,3 +21,26 @@ for line in lines:
     print(line)
 
 # %%
+'''
+Assignment
+
+Please write a function 
+which take four input parameters
+to write the triangle into file with conditions.
+Function declaration:
+
+def print_triangle(N, plus, minus, fileName):
+    expressions
+
+For example,
+
+function call:
+print_triangle(5, 3, 2, "my_triangle.txt") 
+
+Output (in "my_triangle.txt"):
+    *
+   - -
+  + + +
+ * * * *
+* * * * *
+'''
