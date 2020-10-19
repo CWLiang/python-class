@@ -1,54 +1,57 @@
-N = 5
-for i in range(N):
-    print('i=', i)
-    for j in range(i):
-        print('j=', j, end=" ")
-    print()
-
-dic = {'a':'apple','b':'banana','c':'cat'}
-
-for key in dic:
-    print(key, dic[key])
-
-l = list()
-l = []
-for i in range(1,6,2):
-    l.append(i)
-print(l)
-
-l = [1,1,2,3,4,5,6,6,6]
-s = set(l)
-print(s)
-
-N = 7
-print(N==7)
+'''
+if condition1:
+    statement1
+elif condition2:
+    statement2
+else:
+    statement3
+'''
+#%%
 print('case1')
+x = 1
+y = 2
+if x > y:
+    print('x is greater than y')
+else:
+    print('x is less or equal to y')
+print()
+
+print('case2')
+x = 1
+y = 1
+if x > y:
+    print('x is greater than y')
+elif x < y:
+    print('x is less than y')
+else:
+    print('x is equal to y')
+print()
+
+print('case3')
+N = 7
 if N < 7:
     print("N<7")
 elif N == 7:
     print("N=7")
 elif N >= 7:
-    print('N>-8')
+    print('N>=7')
+print()
 
-print('case2')
+print('case4')
+N = 7
 if N < 7:
     print("N<7")
 if N == 7:
     print("N=7")
 if N >= 7:
-    print("N>7")
+    print("N>=7")
+print()
 
-
+print("inline if else")
 x = 1
 y = 2
-
 z = x if x > y else y
 print(z)
 
-l = ['a','b','c','d']
-for index, value in enumerate(l):
-    print(index, value)
-print("length of l = ",len(l))
-for i in range(len(l)):
-    print(l[i])
 
+# %%

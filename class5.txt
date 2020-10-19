@@ -1,0 +1,10 @@
+Write number 0 into class5.txt
+Write number 1 into class5.txt
+Write number 2 into class5.txt
+Write number 3 into class5.txt
+Write number 4 into class5.txt
+Write number 5 into class5.txt
+Write number 6 into class5.txt
+Write number 7 into class5.txt
+Write number 8 into class5.txt
+Write number 9 into class5.txt

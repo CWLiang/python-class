@@ -1,64 +1,85 @@
+'''
+function
 
+def function_name(parameters):
+    expressions ...
+'''
+#%%
 
-# def -> define 定義
-def print_function(input):
-    print(input)
-    output = input * 2
-    return output
+def func1():
+    print('This is func1')
+    a = 1+2
+    print(a)
 
-def report(name, *grades):
+def func2(a, b):
+    c = a+b
+    print(f'{a} + {b} = {c}')
+
+def func3(a, b=2):
+    c = a+b
+    print(f'{a} + {b} = {c}')
+
+def func4(name, *grades):
     total_grade = 0
-    print(type(grades),grades)
-    for grade in grades:
+    print(f"The type of grades is {type(grades)}")
+    print(f"The value of grades is {grades}")
+    for index, grade in enumerate(grades):
+        print(f"Grade {index}. {grade}")
         total_grade += grade
-    print(name, 'total grade is ', total_grade)
+    print(f'Total grade of {name} is {total_grade}')
 
-def portrait(name, **kw):
-    print('name is', name)
-    print(type(kw),kw)
-    for k,v in kw.items():
-        print(k, v)
+def func5(name, **kw):
+    total_grade = 0
+    print(f"The type of kw is {type(kw)}")
+    print(f"The value of kw is {kw}")
+    for subject, grade in kw.items():
+        print(f"{subject}: {grade}")
+        total_grade += grade
+    print(f'Total grade of {name} is {total_grade}')
 
-#report("Mike",1,2,3,4,5)
+print('case1')
+func1()
+print()
 
-#portrait('Mike', age=24, country='China', education='bachelor')
+print('case2')
+func2(3,5)
+print()
 
+print('case3')
+func3(8)
+print()
 
+print('case4')
+func4('Sam',100,98,95,100)
+print()
 
-#name = input("What's your name: ")
-#print(name)
+print('case5')
+func5('Amy',math=100,chinese=98,science=95,english=100)
+print()
+
+#%%
 
 '''
-N = 5
-plus = 3
-minus = 2
+Assignment
+
+Please write a function 
+which take three input parameters
+to print the triangle with conditions.
+Function declaration:
+
+def print_triangle(N, plus, minus):
+    expressions
+
+For example,
+
+function call:
+print_triangle(5, 3, 2) 
+
+Output:
     *
    - -
   + + +
  * * * *
 * * * * *
-def print_triangle(N, plus, minus):
-'''
-'''
-i = 0
-while True:
-    i += 1
-    if i == 3: 
-        continue
-    if i >= 5:
-        break
-    print(i)
 '''
 
-'''
-1. read -> 'r'
-2. write -> 'w'
-3. append -> 'a'
-'''
-fileName = "example.txt"
-fout = open(fileName, 'w')
-for i in range(5):
-    text = f"No.{i} Example to write the {fileName}\n"
-    #text = "Example to write the " + fileName
-    fout.write(text)
-fout.close()
